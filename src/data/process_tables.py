@@ -352,13 +352,13 @@ def process_real_estate_data(from_schema, to_schema):
 
 def process_tables():
     create_schema(CLEAN_SCHEMA)
-    # copy_table_structure_to_schema(RAW_SCHEMA, "data_311", CLEAN_SCHEMA, "data_311")
-    # alter_data_311_table_structure(CLEAN_SCHEMA)
-    # process_data_311(RAW_SCHEMA, CLEAN_SCHEMA)
-    # process_tax_parcel_address(RAW_SCHEMA, CLEAN_SCHEMA)
-    # process_all_vacant_building_notices(RAW_SCHEMA, CLEAN_SCHEMA)
-    # process_code_violations_after_2017(RAW_SCHEMA, CLEAN_SCHEMA)
-    # process_inspection_notes(RAW_SCHEMA, CLEAN_SCHEMA)
+     copy_table_structure_to_schema(RAW_SCHEMA, "data_311", CLEAN_SCHEMA, "data_311")
+     alter_data_311_table_structure(CLEAN_SCHEMA)
+    process_data_311(RAW_SCHEMA, CLEAN_SCHEMA)
+    process_tax_parcel_address(RAW_SCHEMA, CLEAN_SCHEMA)
+    process_all_vacant_building_notices(RAW_SCHEMA, CLEAN_SCHEMA)
+    process_code_violations_after_2017(RAW_SCHEMA, CLEAN_SCHEMA)
+    process_inspection_notes(RAW_SCHEMA, CLEAN_SCHEMA)
     process_real_estate_data(RAW_SCHEMA, CLEAN_SCHEMA)
 
 
